@@ -16,7 +16,7 @@ data.emp.liq <- data.emp.liq %>%
 
 diff.emp.liq <- data.emp.liq %>%
   group_by(nu_Empenho, cd_UGestora, cd_UnidOrcamentaria, dt_Ano, cd_Credor) %>%
-  summarise(mean.diffLiq = mean(diff_liq))
+  summarise(mean.diffLiq = mean(diffLiq))
 
 ## pagamentos e empenhos
 
@@ -37,5 +37,5 @@ tabela <- diff.emp.liq %>%
   left_join(diff.emp.pag, by = c("nu_Empenho", "cd_UGestora", "dt_Ano", "cd_UnidOrcamentaria", "cd_Credor"))
 
 tabela <- tabela %>%
-  mutate(diferenca = mean.diffPag - mean.diff)
+  mutate(diferenca = mean.diffPag - mean.diffLiq)
 
