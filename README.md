@@ -9,6 +9,6 @@ Projeto desenvolvido durante o Hackfest - Contra a corrupção.
 
 # Como rodar?
 
-O projeto foi feito totalmente usando a ferramenta estatística R. Além disso, foram utilizadas
-as bibliotecas 
+O projeto foi feito totalmente usando a ferramenta estatística R. Logo, é possível testá-lo localmente através do Rstudio ou qualquer ferramenta do tipo.
+Mais especificamente, utilizamos as seguintes bibliotecas: shiny, shinydashboard, htmltools, ggplot2 e highcharter (ver R/meu-pagamento-favorito/app.R).
 
