@@ -37,15 +37,18 @@ get.emp.pag <- function(cidade, cd_funcao){
   
   data.emp.pag <- fetch(emp.pag, n=-1)
   
+  print(colnames(data.emp.pag))
+  
   data.emp.pag <- data.emp.pag %>%
     rename("diffPag" = `datediff(p.dt_Pagamento, e.dt_Empenho)`)
   
   diff.emp.pag <- data.emp.pag %>%
-    group_by(nu_Empenho, cd_UGestora, cd_UnidOrcamentaria, dt_Ano, cd_Credor) %>%
+    group_by(nu_Empenho, cd_UGestora, cd_UnidOrcamentaria, dt_Ano, cd_Credor, no_Credor) %>%
     summarise(mean.diffPag = mean(diffPag))
   
   return(diff.emp.pag)
 }
+
 
 
 
