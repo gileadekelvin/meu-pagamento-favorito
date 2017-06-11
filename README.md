@@ -5,6 +5,8 @@ Para depois também está planejado que a ferramenta encontre essas anomalias o 
 
 [Link para o projeto!](https://gileadekelvin.shinyapps.io/meu_pagamento_favorito/)
 
+[Link para o relatório!](http://rpubs.com/dnlgomes/283978)
+
 Projeto desenvolvido durante o Hackfest - Contra a corrupção.
 
 # Como rodar?
