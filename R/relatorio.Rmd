@@ -1,0 +1,17 @@
+---
+title: "Contabilidade criativa"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+  warning = FALSE,
+  message = FALSE)
+```
+
+## Empenhos, liquidação, pagamentos
+
+Você já se perguntou como se dá o processo de execução orçamentária? Como após uma empresa ganhar uma licitação recebe o dinheiro? Conheça os passos no processo da execução orçamentária.
+**Empenho** é uma garantia ao credor de que há recurso orçamentário disponível para pagar a despesa. É nesta etapa que é gerada a obrigação de pagamento da parte da administração.
+**Liquidação** envolve todos os atos de verificação e conferência, desde a entrega do material ou a prestação do serviço até o reconhecimento da despesa, da dívida. 
+**Pagamento** é a transação financeira por parte da Administração Pública para o credor do empenho.
