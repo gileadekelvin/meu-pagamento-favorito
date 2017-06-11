@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Meu Pagamento Favorito</title>
+
+        <script src="libs/angular-1.0.1.min.js"></script>
+        <script src="libs/jquery-3.2.1.min.js"></script>
+        <script src="libs/bootstrap.min.js"></script>
+        <script src="libs/angular-nvd3.js"></script>
+        <script src="app/app.js"></script>
+        <script src="app/controllers/histogramController.js"></script>
+
+        <link rel='stylesheet' type='text/css' href='libs/bootstrap.min.css'>
+        <link rel='stylesheet' type='text/css' href='css/sections.css'>
+    </head>
+
+    <body ng-app="app" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Meu Pagamento Favorito</a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#histograma">Histograma</a></li>
+                        <li><a href="#section2">Section 2</a></li>
+                        <li><a href="#section3">Section 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="histograma" class="container-fluid">
+        <h1>Histograma</h1>
+        <div ng-controller="historicalBarChartCtrl">
+            <nvd3 options="options" data="data"></nvd3>
+        </div>
+    </div>
+    <div id="section2" class="container-fluid">
+        <h1>Section 2</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </div>
+    <div id="section3" class="container-fluid">
+        <h1>Section 3</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </div>
+    </body>
+
+</html>

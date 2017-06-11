@@ -1,0 +1,19 @@
+body {
+    position: relative;
+}
+#histograma {
+    padding-top:50px;
+    color: #fff;
+    background-color: #d3d3d3;
+}
+#section2 {
+    padding-top:50px;
+    color: #fff;
+    background-color: #c7ddef;
+}
+#section3 {
+    padding-top:50px;
+    height:700px;
+    color: #fff;
+    background-color: #9d9d9d;
+}
