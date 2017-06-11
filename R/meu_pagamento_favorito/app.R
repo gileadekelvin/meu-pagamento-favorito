@@ -9,8 +9,6 @@ library(highcharter)
 source("script_data_diff.R")
 ##
 
-
-
 ui <- dashboardPage(skin = "blue",
   dashboardHeader(title = "Meu pagamento favorito", titleWidth = 250),
   dashboardSidebar(width = 250,

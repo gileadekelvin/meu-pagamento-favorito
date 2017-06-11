@@ -47,5 +47,4 @@ get.emp.pag <- function(cidade, cd_funcao){
   return(diff.emp.pag)
 }
 
-liquidacao <- get.emp.liq("050", "10")
 
